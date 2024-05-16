@@ -69,3 +69,4 @@ module.exports = {
   apy: poolsFunction,
   url: 'https://clearpool.finance/',
 };
+// list dynamic pools
