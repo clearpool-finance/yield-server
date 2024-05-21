@@ -33,7 +33,7 @@ const poolsFunction = async () => {
   const result = await request ('https://squid.subsquid.io/cpool-squid/v/v1/graphql', query);
   let pools = []
   if (result && result.allPools) {
-    result.allPools.forEach((pool) => {
+    result.allPools.map((pool) => {
       let chainName;
       switch (pool?.chain) {
         case 'MAINNET':
