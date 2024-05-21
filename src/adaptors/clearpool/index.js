@@ -5,6 +5,11 @@
 const { request, gql } = require('graphql-request');
 const utils = require('../utils');
 
+const toSentenceCase = (str) => {
+  if (!str) return str;
+  return str[0].toUpperCase() + str.slice(1).toLowerCase();
+};
+
 const poolsFunction = async () => {
 
   const query = gql`
@@ -38,7 +43,7 @@ const poolsFunction = async () => {
           chainName = 'Polygon zkEVM';
           break;
         default:
-          chainName = utils.formatChain(pool.chain);
+          chainName = toSentenceCase(pool.chain);
       }
       pool.chain = chainName;
       pools.push(pool);
