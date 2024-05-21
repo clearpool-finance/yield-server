@@ -16,11 +16,9 @@ const poolsFunction = async () => {
       chain
       symbol
       pool
-      poolAddress
       poolMeta
       project
       rewardTokens
-      protocol
       tvlUsd
       underlyingTokens
       url
