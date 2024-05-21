@@ -22,7 +22,7 @@ exports.formatChain = (chain) => {
   )
     return 'zkSync Era';
   if (chain && chain.toLowerCase() === 'polygon_zkevm') return 'Polygon zkEVM';
-  return chain.charAt(0).toUpperCase() + chain.slice(1);
+  return chain.charAt(0).toUpperCase() + chain.slice(1).toLowerCase();
 };
 
 const getFormatter = (symbol) => {
