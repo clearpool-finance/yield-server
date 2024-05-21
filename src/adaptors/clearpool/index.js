@@ -10,18 +10,18 @@ const poolsFunction = async () => {
   const query = gql`
    {
     allPools {
-      apyBase
-      apyBaseBorrow
-      apyReward
-      chain
-      symbol
       pool
-      poolMeta
+      chain
       project
-      rewardTokens
+      symbol
       tvlUsd
+      apyBase
+      apyReward
+      rewardTokens
       underlyingTokens
+      poolMeta
       url
+      apyBaseBorrow
     }
   }
 `;
