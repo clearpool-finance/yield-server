@@ -77,7 +77,7 @@
     "globalTeardown": "./src/adaptors/afterTests.js"
   },
   "overrides": {
-    "brace-expansion": "1.1.13",
+    "brace-expansion": "1.1.15",
     "braces": "3.0.3",
     "fast-xml-parser": "5.7.0",
     "follow-redirects": "1.16.0",
