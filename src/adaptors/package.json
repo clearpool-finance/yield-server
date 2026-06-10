@@ -22,7 +22,7 @@
     "graphql": "^15.5.1",
     "graphql-request": "^3.5.0",
     "limiter": "^2.1.0",
-    "lodash": "^4.17.21",
+    "lodash": "^4.18.1",
     "node-fetch": "^2.6.1",
     "superagent": "^6.1.0",
     "web3": "^4.8.0"
